@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twin Cities Animal Rescue | Adoption and Programs</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <img class="site-logo" src="media/rescue-logo_c.png" alt="Twin Cities Animal Rescue logo">
+            <nav class="primary-nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" aria-current="page">Adoption and Programs</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Get Involved</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Adoption and Programs</h1>
+        <p class="notice">Whether you are ready to adopt, able to foster, or looking for a way to volunteer, there is more than one way to help an animal move toward a stable home.</p>
+
+        <div class="card-grid content-section">
+            <section class="content-card">
+                <h2>Adoption Process</h2>
+                <ol>
+                    <li>Review available pets and submit an adoption inquiry.</li>
+                    <li>Talk with a rescue team member about the pet and your home.</li>
+                    <li>Meet the animal and ask questions before making a decision.</li>
+                    <li>Complete the adoption process and prepare for the pet to come home.</li>
+                </ol>
+            </section>
+
+            <section class="content-card">
+                <h2>Foster Program</h2>
+                <p>Foster homes give animals a quieter place to stay while they wait for adoption. The rescue provides guidance and stays in contact with foster families so they are not handling the process alone.</p>
+            </section>
+        </div>
+
+        <section class="content-section helper-tool" aria-labelledby="helper-heading">
+            <h2 id="helper-heading">Find the Right Way to Help</h2>
+            <p>Not sure where to start? Choose what you are considering and the page will give you a next step. Your choice is saved so it can follow you to the Get Involved form.</p>
+            <div class="interest-controls">
+                <div>
+                    <label for="help-interest">I am interested in</label>
+                    <select id="help-interest" name="help-interest">
+                        <option value="">Choose one</option>
+                    </select>
+                    <span class="field-error" id="help-interest-error" aria-live="polite"></span>
+                </div>
+                <button type="button" id="show-interest">Show My Next Step</button>
+            </div>
+            <div class="interest-result" id="interest-result" aria-live="polite" hidden>
+                <h3 id="interest-result-heading"></h3>
+                <p id="interest-result-text"></p>
+                <a class="action-link" id="interest-result-link" href="contact.html">Continue to Get Involved</a>
+            </div>
+            <p class="storage-note" id="interest-save-status" hidden></p>
+        </section>
+
+        <section class="content-section split-layout">
+            <div>
+                <h2>Volunteer Opportunities</h2>
+                <p>Volunteers help with events, animal care support, transportation, outreach, and other needs that keep the rescue moving. Some roles are occasional while others work better for people who can help on a regular schedule.</p>
+                <a class="action-link" href="contact.html">Ask About Volunteering</a>
+            </div>
+            <img src="media/rescue-volunteer_c.png" alt="Animal rescue volunteer spending time with a dog during a community rescue event">
+        </section>
+
+        <section class="content-section">
+            <h2>Pet Spotlight</h2>
+            <figure>
+                <img src="media/rescue-pet-spotlight_c.png" alt="Rescue pet featured as the current adoption spotlight">
+                <figcaption>Pet Spotlight: Every animal deserves the time and care needed to find the right home.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>Twin Cities Animal Rescue | Adoption, foster, and volunteer programs</p>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Get Involved</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>

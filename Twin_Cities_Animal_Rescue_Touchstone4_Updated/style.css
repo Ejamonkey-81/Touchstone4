@@ -1,0 +1,391 @@
+/* Twin Cities Animal Rescue - Touchstone 3 */
+:root {
+    --teal: #0F3D3E;
+    --cream: #F7F3E8;
+    --orange: #D97745;
+    --charcoal: #243238;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--charcoal);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img,
+picture,
+video {
+    max-width: 100%;
+}
+
+img,
+video {
+    display: block;
+    height: auto;
+    border-radius: 0.65rem;
+}
+
+a {
+    color: var(--teal);
+    font-weight: 700;
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--orange);
+}
+
+.site-header {
+    background: var(--teal);
+    padding: 1rem;
+}
+
+.header-inner,
+main,
+.footer-inner {
+    width: min(100% - 2rem, 70rem);
+    margin-inline: auto;
+}
+
+.header-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.site-logo {
+    width: 10rem;
+    border-radius: 0;
+}
+
+.primary-nav ul,
+.footer-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.primary-nav a,
+.footer-nav a {
+    display: inline-block;
+    color: var(--cream);
+    text-decoration: none;
+    padding: 0.45rem 0.7rem;
+    border-radius: 0.4rem;
+}
+
+.primary-nav a:hover,
+.primary-nav a:focus-visible,
+.footer-nav a:hover,
+.footer-nav a:focus-visible,
+.primary-nav a[aria-current="page"] {
+    background: var(--orange);
+    color: var(--charcoal);
+}
+
+main {
+    padding-block: 2rem 3rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+    line-height: 1.2;
+    color: var(--teal);
+}
+
+h1 {
+    margin: 0 0 1.25rem;
+    font-size: clamp(2rem, 7vw, 3.4rem);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: clamp(1.45rem, 5vw, 2rem);
+}
+
+.hero,
+.split-layout,
+.card-grid,
+.stats,
+.form-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.hero,
+.content-card,
+figure,
+form,
+.notice {
+    background: var(--cream);
+    border: 2px solid var(--teal);
+    border-radius: 0.8rem;
+    padding: 1.25rem;
+}
+
+.hero {
+    margin-bottom: 1.5rem;
+}
+
+.hero-copy p {
+    font-size: 1.08rem;
+}
+
+.hero-media img {
+    width: 100%;
+}
+
+.content-section {
+    margin-top: 1.5rem;
+}
+
+.card-grid .content-card {
+    flex: 1 1 0;
+}
+
+.stats {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.stat {
+    flex: 1 1 0;
+    background: var(--teal);
+    color: var(--cream);
+    border-radius: 0.7rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.stat strong {
+    display: block;
+    color: var(--orange);
+    font-family: Georgia, serif;
+    font-size: 2rem;
+}
+
+.action-link,
+button {
+    display: inline-block;
+    background: var(--orange);
+    color: var(--charcoal);
+    border: 2px solid var(--charcoal);
+    border-radius: 0.45rem;
+    padding: 0.7rem 1rem;
+    text-decoration: none;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.action-link:hover,
+.action-link:focus-visible,
+button:hover,
+button:focus-visible {
+    background: var(--teal);
+    color: var(--cream);
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    margin-top: 0.75rem;
+    font-weight: 700;
+}
+
+video {
+    width: 100%;
+    background: var(--charcoal);
+}
+
+form {
+    max-width: 48rem;
+}
+
+fieldset {
+    border: 2px solid var(--teal);
+    border-radius: 0.6rem;
+    margin: 0 0 1.25rem;
+    padding: 1rem;
+}
+
+legend {
+    font-family: Georgia, serif;
+    font-weight: 700;
+    color: var(--teal);
+    padding-inline: 0.4rem;
+}
+
+label {
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    max-width: 32rem;
+    margin-top: 0.35rem;
+    padding: 0.7rem;
+    border: 2px solid var(--charcoal);
+    border-radius: 0.4rem;
+    background: var(--cream);
+    color: var(--charcoal);
+    font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid var(--orange);
+    outline-offset: 3px;
+}
+
+.check-option {
+    margin-block: 0.55rem;
+}
+
+.site-footer {
+    background: var(--charcoal);
+    color: var(--cream);
+    padding: 1.5rem 1rem;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+@media (min-width: 48rem) {
+    .header-inner,
+    .footer-inner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .primary-nav ul,
+    .footer-nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .hero,
+    .split-layout,
+    .form-layout {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-copy,
+    .hero-media,
+    .split-layout > *,
+    .form-layout > * {
+        flex: 1 1 0;
+    }
+
+    .card-grid,
+    .stats {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .content-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Touchstone 4: interactivity, validation, and saved choices */
+.helper-tool {
+    background: #fffdf7;
+    border: 2px solid var(--teal);
+    border-radius: 0.8rem;
+    padding: 1.25rem;
+}
+
+.interest-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.interest-controls > div {
+    width: 100%;
+}
+
+.interest-result {
+    margin-top: 1.25rem;
+    padding: 1.1rem;
+    border-left: 0.4rem solid var(--orange);
+    background: var(--cream);
+}
+
+.interest-result h3 {
+    margin-top: 0;
+}
+
+.field-error {
+    display: block;
+    min-height: 1.35rem;
+    margin-top: 0.35rem;
+    color: #8B1E1E;
+    font-weight: 700;
+}
+
+[aria-invalid="true"] {
+    border-color: #8B1E1E !important;
+}
+
+.storage-note,
+.success-message {
+    border-radius: 0.45rem;
+    padding: 0.75rem 0.9rem;
+    font-weight: 700;
+}
+
+.storage-note {
+    margin-top: 1rem;
+    background: #E3F0EC;
+    border-left: 0.35rem solid var(--teal);
+}
+
+.success-message {
+    margin-top: 1rem;
+    background: #E3F0EC;
+    border: 2px solid var(--teal);
+}
+
+@media (min-width: 48rem) {
+    .interest-controls {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    .interest-controls > div {
+        max-width: 28rem;
+    }
+}
