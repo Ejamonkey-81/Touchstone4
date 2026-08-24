@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twin Cities Animal Rescue | Get Involved</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <img class="site-logo" src="media/rescue-logo_c.png" alt="Twin Cities Animal Rescue logo">
+            <nav class="primary-nav" aria-label="Primary navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Adoption and Programs</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" aria-current="page">Get Involved</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Get Involved</h1>
+
+        <div class="form-layout">
+            <section>
+                <h2>Volunteer, Foster, or Adoption Information</h2>
+                <p>Use this form to tell us how you would like to help or what information you need. Required fields help us make sure we have enough information to reply.</p>
+
+                <p class="storage-note" id="storage-status" hidden aria-live="polite"></p>
+
+                <form id="interest-form" action="#" method="post" novalidate>
+                    <fieldset>
+                        <legend>Your Contact Information</legend>
+                        <p>
+                            <label for="full-name">Full name</label><br>
+                            <input type="text" id="full-name" name="full-name" required pattern="[A-Za-z .'-]{2,}" title="Enter at least two letters using your name." aria-describedby="full-name-error">
+                            <span class="field-error" id="full-name-error" aria-live="polite"></span>
+                        </p>
+                        <p>
+                            <label for="email">Email address</label><br>
+                            <input type="email" id="email" name="email" required aria-describedby="email-error">
+                            <span class="field-error" id="email-error" aria-live="polite"></span>
+                        </p>
+                        <p>
+                            <label for="interest">What are you interested in?</label><br>
+                            <select id="interest" name="interest" required aria-describedby="interest-error">
+                                <option value="">Choose one</option>
+                                <option value="volunteer">Volunteering</option>
+                                <option value="foster">Fostering</option>
+                                <option value="adoption">Adoption information</option>
+                            </select>
+                            <span class="field-error" id="interest-error" aria-live="polite"></span>
+                        </p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Availability</legend>
+                        <p>Select the times that usually work for you.</p>
+                        <p class="check-option"><input type="checkbox" id="weekday" name="availability" value="weekday"> <label for="weekday">Weekdays</label></p>
+                        <p class="check-option"><input type="checkbox" id="evening" name="availability" value="evening"> <label for="evening">Evenings</label></p>
+                        <p class="check-option"><input type="checkbox" id="weekend" name="availability" value="weekend"> <label for="weekend">Weekends</label></p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Experience and Message</legend>
+                        <p>
+                            <label for="experience">Tell us about any experience you have with pets.</label><br>
+                            <textarea id="experience" name="experience" rows="4"></textarea>
+                        </p>
+                        <p>
+                            <label for="message">Short message</label><br>
+                            <textarea id="message" name="message" rows="5" required minlength="10" aria-describedby="message-error"></textarea>
+                            <span class="field-error" id="message-error" aria-live="polite"></span>
+                        </p>
+                    </fieldset>
+                    <button type="submit">Check and Send Interest Form</button>
+                    <p class="success-message" id="form-success" tabindex="-1" hidden></p>
+                </form>
+            </section>
+
+            <aside class="content-card" aria-labelledby="visit-heading">
+                <h2 id="visit-heading">Service Area and Hours</h2>
+                <p>We serve the Twin Cities metro area and nearby communities. Availability for adoption meetings, fostering, and volunteer work can vary, so contacting us first is the best way to plan a visit.</p>
+                <p><strong>Monday through Friday:</strong> 10:00 a.m. to 5:00 p.m.<br>
+                <strong>Saturday:</strong> 10:00 a.m. to 2:00 p.m.<br>
+                <strong>Sunday:</strong> By appointment</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>Twin Cities Animal Rescue | Thank you for helping animals in our community</p>
+            <nav class="footer-nav" aria-label="Footer navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Adoption and Programs</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
